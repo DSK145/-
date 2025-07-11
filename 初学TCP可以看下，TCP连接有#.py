@@ -14,6 +14,6 @@ while 1:
             received_data = data.decode('utf-8')#用utf-8解码
             print (f'数据；{received_data}')#{received_data}接收数据
             response = 'OK'
-            client_socket.send(response.encode('utf2-8'))#utf-8编码
+            client_socket.send(response.encode('utf-8'))#utf-8编码
     finally: 
          client_socket.close()#关闭套接字
